@@ -19,8 +19,7 @@ body {
 .header {
     padding: 80px;
     text-align: center;
-    background: #0099ff;
-    color: white;
+    color:black;
 }
 
 /* 标题字体加大 */
@@ -31,7 +30,6 @@ body {
 /* 导航 */
 .navbar {
     overflow: hidden;
-    background-color: #6C7B8B;
 }
 
 /* 导航栏样式 */
@@ -39,7 +37,7 @@ body {
     float: left;
     display: block;
     color: white;
-    text-align: center;
+    text-align: top;
     padding: 14px 20px;
     text-decoration: none;
 }
@@ -68,7 +66,7 @@ body {
 .side {
     -ms-flex: 30%; /* IE10 */
     flex: 30%;
-    background-color: #ffff66;
+
     padding: 20px;
 }
 
@@ -76,7 +74,6 @@ body {
 .main {   
     -ms-flex: 70%; /* IE10 */
     flex: 70%;
-    background-color: #33ccff;
     padding: 20px;
 }
 
@@ -94,8 +91,8 @@ body {
     background: #6C7B8B;
 }
 
-/* 响应式布局 - 在屏幕设备宽度尺寸小于 700px 时, 让两栏上下堆叠显示 */
-@media screen and (max-width: 700px) {
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 400px 时, 让两栏上下堆叠显示 */
+@media screen and (max-width: 400px) {
     .row {   
         flex-direction: column;
     }
@@ -115,6 +112,11 @@ body {
 <div class="header">
   <h1>Kristen23557的个人站点</h1>
   <p>逃れようと　どうにかしようと　バラバラの欠片を集めている</p>
+<style>
+body {
+  background-image: url('WelBac.png');
+}
+</style>
 </div>
 
 <div class="navbar">
@@ -124,6 +126,7 @@ body {
 <div class="row">
   <div class="side">
       <h2>Kristen23557</h2>
+      <img src="headc.png" width="300" height="300">
       <h5>我是个什么东西|INFORMATION:</h5>
       <p>普通游戏宅，FPS专精</p>
 	  <p>内向+外向（？</p>

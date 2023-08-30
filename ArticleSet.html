@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArticleSet</title>
+    <style>
+        /*文本颜色*/
+        .header {color: rgb(165, 201, 202);}
+        .guide {
+            height: 35px;
+            background-color: #A5C9CA;
+        }
+        .guide a:hover {
+            background-color: #2c3333;
+            color: #a5c9ca;
+        }
+        .guide a {
+            color: #495371;
+            font-size: 27px;
+            text-decoration: none;
+        }
+
+        .text/*卡片颜色*/
+        {
+            background-color: rgb(57,91,100);
+            width: 1080;
+            height: 200;
+        }
+        .text h3 {/*文章标题字色*/
+            background-color: #a5c9ca;
+        }
+        .text h4 {/*类介绍字色*/
+            color: #a5c9ca;
+        }
+        .text h5 {
+            color: #a5c9ca;
+        }
+        .text p {
+            color: #e7f6f2;
+        }
+        /*消除卡片后float*/
+        .main::after{
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        .footer {
+        position: fixed;
+        left: 0px;
+        bottom: 0px;
+        width: 100%;
+        height: 90px;
+        z-index: 9999;
+        padding: 20px;
+        text-align: center;
+        background-color: #6C7B8B;
+        }
+        /*响应式布局*/
+        @media screen and (max-width: 800px) {
+        .leftcolumn, .rightcolumn{
+            width: 100%;
+            padding: 0;
+        }
+        }
+
+        @media screen and (max-width: 400px) {
+        .topnav a {
+            float: none;
+            width: 100%;
+        }
+        }
+    </style>
+</head>
+<body style="background:#191d1d"><!--设置全局背景色-->
+    
+    <div class="main">
+        <!--设置网站头文字-->
+        <div class="header">
+            <h1>&nbsp;这里是文章列表-</h1>
+        </div>
+        <!--设置网站首页分类-->
+        <div class="guide">
+            <h2>
+            <a href="index.html">&nbsp;返回站点</a>
+            <a href="https://github.com/Kristen23557">&nbsp;Github个人主页</a>
+            <a href="https://space.bilibili.com/524220545">&nbsp;Bilibili</a>
+            </h2>
+        </div>
+        <!--设置正文row-->
+        <div class="row">
+            <div class="text">
+                <h3>D类文章</h3>
+                <h4>日常类</h4>
+                <p>
+                    暂无
+                </p>
+                <h5></h5>
+            </div>
+            <div class="text">
+                <h3>T类文章</h3>
+                <h4>突如其来的思考类</h4>
+                <p>
+                    暂无
+                </p>
+            </div>
+            <div class="text">
+                <h3>阵痛类文章</h3>
+                <h4>............</h4>
+                <a href="HA1.html">好痛，好痛......</a>
+            </div>
+        </div>
+    </div>
+    <!--设置尾部-->
+    <div class="footer">
+        <h5>本站点仍在建设中，不要太期待以后会有什么进展  Release at Aug.22 2023</h5>
+        <p>©Copyright 2023 Kristen23557(Kristen Wilson). AllRightsReserved</p>
+    </div>
+</body>
+    
+</body>
+</html>
